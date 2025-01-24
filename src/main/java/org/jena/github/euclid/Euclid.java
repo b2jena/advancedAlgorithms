@@ -12,9 +12,9 @@ public class Euclid {
      * @return
      */
     public int gcd(int number, int divisor) {
-        int remaining = number % divisor;
-        if (remaining != 0) {
-            gcd(remaining, remaining);
+        int remainder = number % divisor;
+        if (remainder != 0) {
+            return gcd(divisor, remainder);
         }
         return divisor;
     }
