@@ -33,9 +33,9 @@ public class Euclid {
      */
     public int gcd2(int number, int divisor) {
         while (divisor != 0) {
-            int temp = number % divisor;
+            int remainder = divisor;
             divisor = number % divisor;
-            number = temp;
+            number = remainder;
         }
         return number;
     }
